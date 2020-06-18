@@ -19,6 +19,7 @@ public class Problems {
     public static void main(String[] args) {
         String validar = validar("hhhhooooollllllaaaaaa");
         String capitalizar = capitalizar("datos");
+        
         System.out.println(capitalizar);
         System.out.println(validar);
         
@@ -43,8 +44,5 @@ public class Problems {
            palabra = (sb.toString().equals("hola"))?"Verdadero":"Falso";
            return palabra;
     }
-
-
-    
 }
 

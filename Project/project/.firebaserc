@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pruebalumon": {
+      "hosting": {
+        "project": [
+          "pruebalumon"
+        ]
+      }
+    }
+  }
+}
