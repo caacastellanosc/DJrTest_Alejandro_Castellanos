@@ -19,10 +19,10 @@ public class Problems {
     public static void main(String[] args) {
         String validar = validar("hhhhooooollllllaaaaaa");
         String capitalizar = capitalizar("datos");
-        
+        String transformar = transformar("AnaLITica");
         System.out.println(capitalizar);
         System.out.println(validar);
-        
+        System.out.println(transformar);
         
     }
     
@@ -43,6 +43,12 @@ public class Problems {
            String palabra;
            palabra = (sb.toString().equals("hola"))?"Verdadero":"Falso";
            return palabra;
+    }
+    
+    static String transformar(String s)
+    {
+           
+           return s.replaceAll("[aeiouAEIOU]", ".").toLowerCase();
     }
 }
 
