@@ -17,9 +17,11 @@ public class Problems {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String validar = validar("hhhhooooollllllaaaaaa");
+        String capitalizar = capitalizar("datos");
+        System.out.println(capitalizar);
+        System.out.println(validar);
         
-        String respuesta = capitalizar("datos");
-        System.out.println(respuesta);
         
     }
     
@@ -29,6 +31,17 @@ public class Problems {
     {
         String palabraf = Character.toUpperCase(palabra.charAt(0)) + palabra.substring(1,palabra.length());
         return  palabraf;
+    }
+    
+    static String validar(String s)
+    {
+           StringBuffer sb = new StringBuffer(s);        
+           for (int i = sb.length() - 2; i >= 0; i--)
+               if (sb.charAt(i) == sb.charAt(i + 1))
+                    sb.deleteCharAt(i + 1);
+           String palabra;
+           palabra = (sb.toString().equals("hola"))?"Verdadero":"Falso";
+           return palabra;
     }
 
 
